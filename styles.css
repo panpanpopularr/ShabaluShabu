@@ -53,11 +53,26 @@
     display: flex;
 }
 
+#filelist {
+    width: 100%;
+    border: 3px solid white;
+    color: black;
+}
+
+#filelist td {
+    border: 3px solid white;
+}
+
 #filein {
-    border: 3px solid rgb(152, 143, 105);
+    border: 3px solid rgba(152, 143, 105, 0.632);
     border-radius: 0.3rem;
+    font-size: 30px;
     cursor: pointer;
-    margin-bottom: 400px;
+    margin-bottom: 50%;
+    background-color: rgb(152, 143, 105);
+}
+#filein:hover {
+    background-color: rgb(129, 118, 68);
 }
 
 .content1-content {
