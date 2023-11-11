@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Convert Images to PDF</title>
+</head>
+<body class="content">
+    <div class="top"><h1 style="color: white; font-size: 50px; margin-top: 0px;">Convert Images to PDF</h1></div>
+    <div class="main-content" style="width: 100%;">
+        <div class="upperdiv" style="display: flex; text-align: center;">
+            <div>
+                <img src="https://i.stack.imgur.com/0dKeS.png" width="40%">
+            </div>
+            <div class="inputer">
+                <h2 style="color: rgb(0, 0, 0); font-size: 40px;">Input File</h2>
+                <input id="fileinput" style="font-size: 30px;" type="file" hidden multiple>
+                <br>
+                <label id="filein" for="fileinput">Upload File</label>
+                <br>
+                <button style="color: black; font-size: 30px; margin-top: 5%;">Convert</button>
+            </div>
+            <div>
+                <img src="https://media.discordapp.net/attachments/1152259750558445572/1172933002087628901/pdf-icon-1.png?ex=65621dfb&is=654fa8fb&hm=ca8e2a2b3dbfd968d93e300deeb3888df16aca460b0ada7c75eb3c581172b98f&=" width="40%">
+            </div>
+        </div>
+        <div class="output-content1">
+            <div class="content1-content">
+                <h2 style="color: rgb(0, 0, 0); font-size: 40px;">File</h2>
+                <table id="filelist">
+
+                </table>
+            </div>
+            <div class="content1-content">
+                <h2 style="color: rgb(0, 0, 0); font-size: 40px;">Download</h2>
+            </div>
+            <div class="content1-content">
+                <h2 style="color: rgb(0, 0, 0); font-size: 40px;">Setting</h2>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
