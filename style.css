@@ -38,35 +38,6 @@
     margin-top: 10px;
 }
 
-/* .right-content {
-    border: 3px solid #000000;
-    border-radius: 10px;
-    background-color: rgb(152, 143, 105);
-    margin-left: auto;
-    margin-right: 10px;
-    margin-top: 10px;
-    text-align: center;
-}
-.left-content {
-    border: 3px solid #000000;
-    border-radius: 10px;
-    background-color: rgb(152, 143, 105);
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.middle-content {
-    border: 3px solid #000000;
-    border-radius: 10px;
-    background-color: rgb(152, 143, 105);
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: 10px;
-    margin-top: 10px;
-    text-align: center;
-} */
 .output-content1 {
     width: 100%;
     height: 50%;
@@ -91,24 +62,24 @@
     padding: 5px;
     border-radius: 0.3rem;
     font-size: 30px;
-    color: black;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     margin-bottom: 60%;
-    background-color: #ff5858;
+    background-color: #ff0000;
 }
 #submitter {
     border: 3px solid black;
     padding: 5px;
     border-radius: 0.3rem;
     font-size: 30px;
-    color: white;
+    color: rgb(255, 0, 0);
     cursor: pointer;
     margin-bottom: 50%;
-    background-color: #ff5858;
+    background-color: #ffffff;
 }
 
 #submitter:hover {
-    background-color: rgb(255, 0, 0);
+    background-color: #f0e7e7;
 }
 
 
@@ -117,7 +88,7 @@
 }
 
 #filein:hover {
-    background-color: rgb(199, 199, 199);
+    background-color: #ff5858;
 }
 
 .content1-content {

@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Overpass:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: Overpass;
+        }
+    </style>
     <title>Convert Images to PDF</title>
 </head>
 <body class="content">
     <!-- content -->
-    <div class="top"><h1 style="color: white; font-size: 50px; margin-top: 7px;">Convert Images to PDF</h1></div>
+    <div class="top"><h1 style="color: white; font-size: 50px; margin-top: 10px;">Convert Images to PDF</h1></div>
     <div class="main-content" style="width: 100%;">
         <div class="upperdiv" style="display: flex; text-align: center;">
             <div>
-                <img src="https://i.stack.imgur.com/0dKeS.png" width="30%" style="margin-top: 7%;">
+                <img src="https://i.stack.imgur.com/0dKeS.png" width="35%" style="margin-top: 7%;">
             </div>
             <div class="inputer">
                 <h2 style="color: rgb(0, 0, 0); font-size: 40px;">Input File</h2>
-                <input id="fileinput" style="font-size: 30px;" type="file" hidden multiple>
+                <input id="fileinput" style="font-size: 30px" type="file" hidden multiple>
                 <br>
                 <label id="filein" for="fileinput">Upload File</label>
                 <br>
