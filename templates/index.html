@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Convert Images to PDF</title>
 </head>
 <body class="content">
@@ -22,7 +22,7 @@
                 <button style="color: black; font-size: 30px; margin-top: 5%;">Convert</button>
             </div>
             <div>
-                <img src="https://media.discordapp.net/attachments/1152259750558445572/1172933002087628901/pdf-icon-1.png?ex=65621dfb&is=654fa8fb&hm=ca8e2a2b3dbfd968d93e300deeb3888df16aca460b0ada7c75eb3c581172b98f&=" width="40%">
+                <img style="margin-top: 10%;" src="https://media.discordapp.net/attachments/1152259750558445572/1172933002087628901/pdf-icon-1.png?ex=65621dfb&is=654fa8fb&hm=ca8e2a2b3dbfd968d93e300deeb3888df16aca460b0ada7c75eb3c581172b98f&=" width="40%">
             </div>
         </div>
         <div class="output-content1">
@@ -34,9 +34,21 @@
             </div>
             <div class="content1-content">
                 <h2 style="color: rgb(0, 0, 0); font-size: 40px;">Download</h2>
+                <table id="fileout">
+
+                </table>
             </div>
             <div class="content1-content">
                 <h2 style="color: rgb(0, 0, 0); font-size: 40px;">Setting</h2>
+                <table id="filesetting"></table>
+                <form action="/action_page.php">
+                    <p style="font-size: 40px;">Please select your output file 📁</p>
+                    <input type="radio" id="All to one" name="fav_language" value="All to one">
+                    <label style="font-size: 30px;" for="All to one">All file image to one file pdf</label><br>
+                    <input type="radio" id="zip flie" name="fav_language" value="zip flie">
+                    <label style="font-size: 30px;" for="css">file image to zip flie</label><br>
+                    <br>
+
             </div>
         </div>
     </div>
