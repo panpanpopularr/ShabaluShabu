@@ -16,7 +16,7 @@
 }
 
 .content {
-    background-color: rgb(225, 229, 234);
+    background-color: rgb(255, 255, 255);
     height: 80vh;
 }
 
@@ -33,7 +33,7 @@
     border: 3px solid #000000;
     border-radius: 10px;
     border-color: black;
-    background-color: white;
+    background-color: rgb(219, 219, 219);
     height: 100%;
     margin-top: 10px;
 }
@@ -76,7 +76,6 @@
 
 #filelist {
     width: 100%;
-    border: 3px solid white;
     color: black;
     overflow-y: scroll;
 }
@@ -84,6 +83,7 @@
 #filelist tr {
     border: 3px solid white;
     display: block;
+    text-align: left;
 }
 
 #filein {
@@ -94,15 +94,30 @@
     color: white;
     cursor: pointer;
     margin-bottom: 50%;
-    background-color: red;
+    background-color: rgb(173, 173, 173);
 }
+#submitter {
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 0.3rem;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 50%;
+    background-color: #ff5858;
+}
+
+#submitter:hover {
+    background-color: rgb(255, 0, 0);
+}
+
 
 .upperdiv div {
     width: 33%;
 }
 
 #filein:hover {
-    background-color: rgb(255, 108, 108);
+    background-color: rgb(199, 199, 199);
 }
 
 .content1-content {

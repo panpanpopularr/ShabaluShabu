@@ -1,5 +1,24 @@
 let allfile = []
-document.getElementById('fileinput').addEventListener('change', async() => {
+
+document.addEventListener('DOMContentLoaded', async () => {
+    document.getElementById("allinone").checked = true;
+    document.getElementById('submitt').addEventListener('click', () => {
+
+        console.log("Uploading file...");
+        const API_ENDPOINT = "/";
+        const request = new XMLHttpRequest();
+        const formData = new FormData();
+      
+        request.open("POST", API_ENDPOINT, true);
+        for (let i = 0; i < allfile.length; i++) {
+          formData.append(allfile[i].name, allfile[i])
+        }
+        request.send(formData);
+    })
+
+})
+
+document.getElementById('fileinput').addEventListener('change', async () => {
     let filein = document.getElementById('fileinput');
     let filelist = document.getElementById('filelist');
     if (filein.files.length != 0) {
@@ -16,7 +35,7 @@ document.getElementById('fileinput').addEventListener('change', async() => {
             tr.appendChild(p);
             filelist.append(tr)
             allfile.push(element)
-            
+
         });
         filein.value = null
 
