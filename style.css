@@ -1,0 +1,159 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(247, 177, 177);
+    border-radius: 10px;
+}
+
+.content {
+    background-color: rgb(245, 231, 210);
+    height: 80vh;
+}
+
+.top {
+    background-color: rgb(255, 0, 0);
+    width: 100%;
+    height: 10vh;
+    border-radius: 10px;
+    border: 3px solid #000;
+    text-align: center;
+}
+
+.main-content {
+    border: 3px solid #000000;
+    border-radius: 10px;
+    border-color: black;
+    background-color: rgb(246, 195, 195);
+    height: 100%;
+    margin-top: 10px;
+}
+
+/* .right-content {
+    border: 3px solid #000000;
+    border-radius: 10px;
+    background-color: rgb(152, 143, 105);
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+.left-content {
+    border: 3px solid #000000;
+    border-radius: 10px;
+    background-color: rgb(152, 143, 105);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.middle-content {
+    border: 3px solid #000000;
+    border-radius: 10px;
+    background-color: rgb(152, 143, 105);
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+} */
+.output-content1 {
+    width: 100%;
+    height: 50%;
+    margin-top: 0px;
+    display: flex;
+}
+
+#filelist {
+    width: 100%;
+    color: black;
+    overflow-y: scroll;
+}
+
+#filelist tr {
+    border: 3px solid white;
+    display: block;
+    text-align: left;
+}
+
+#filein {
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 0.3rem;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 60%;
+    background-color: #ff5858;
+}
+#submitter {
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 0.3rem;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 50%;
+    background-color: #ff5858;
+}
+
+#submitter:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+
+.upperdiv div {
+    width: 33%;
+}
+
+#filein:hover {
+    background-color: rgb(199, 199, 199);
+}
+
+.content1-content {
+    width: 33%;
+    height: 100%;
+    border: 3px solid #000000;
+    background-color: rgb(185, 71, 71);
+    margin-inline: 10px;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+body {
+    text-align: center;
+    
+}
+
+#fileout {
+    width: 100%;
+    border: 3px solid white;
+    color: black;
+    overflow-y: scroll;
+}
+
+#fileout tr {
+    border: 3px solid white;
+    display: block;
+}
+
+#filesetting {
+    width: 100%;
+    border: 3px solid white;
+    color: black;
+}
+
+#filesetting tr {
+    border: 3px solid white;
+    display: block;
+}
