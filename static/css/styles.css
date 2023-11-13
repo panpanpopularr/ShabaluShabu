@@ -119,3 +119,26 @@ body {
     text-align: center;
     
 }
+
+#fileout {
+    width: 100%;
+    border: 3px solid white;
+    color: black;
+    overflow-y: scroll;
+}
+
+#fileout tr {
+    border: 3px solid white;
+    display: block;
+}
+
+#filesetting {
+    width: 100%;
+    border: 3px solid white;
+    color: black;
+}
+
+#filesetting tr {
+    border: 3px solid white;
+    display: block;
+}
