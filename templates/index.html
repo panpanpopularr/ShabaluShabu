@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Overpass:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+    <style>
+        body{
+            font-family: Overpass;
+        }
+    </style>
     <title>Convert Images to PDF</title>
 </head>
 <body class="content">
     <!-- content -->
-    <div class="top"><h1 style="color: white; font-size: 50px; margin-top: 1%;">Convert Images to PDF</h1></div>
+    <div class="top"><h1 style="color: white; font-size: 50px; margin-top: 10px;">Convert Images to PDF</h1></div>
     <div class="main-content" style="width: 100%;">
         <div class="upperdiv" style="display: flex; text-align: center;">
             <div>
-                <img src="https://i.stack.imgur.com/0dKeS.png" width="30%" style="margin-top: 7%;">
+                <img src="https://i.stack.imgur.com/0dKeS.png" width="35%" style="margin-top: 7%;">
             </div>
             <div class="inputer">
                 <h2 style="color: rgb(0, 0, 0); font-size: 40px;">Input File</h2>
-                <input id="fileinput" style="font-size: 30px;" type="file" hidden multiple>
+                <input id="fileinput" accept=".jpg, .png, .jpeg |image/*" style="font-size: 30px" type="file" hidden multiple>
                 <br>
                 <label id="filein" for="fileinput">Upload File</label>
                 <br>
@@ -36,8 +45,11 @@
 
                 </table>
             </div>
-            <div class="content1-content">
+            <div class="content1-content" id="downloadtab">
                 <h2 style="color: rgb(0, 0, 0); font-size: 40px;">Download</h2>
+                <table id="downloadlist">
+
+                </table>
             </div>
             <div class="content1-content">
                 <h2 style="color: rgb(0, 0, 0); font-size: 40px;">Settings</h2>

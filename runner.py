@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template, jsonify, send_file
 from flask_cors import CORS
-# import imgtopdf
+import realpdf
+from io import BytesIO
 app = Flask(__name__)
 CORS(app)
 
@@ -9,11 +10,14 @@ def slash():
     if request.method == 'GET':
         return render_template('index.html')
     elif request.method == "POST":
-    #    imgtopdf.pdfmaker('allinone')
-        pass
-    
+        print(request.form.get('filetype'))
+        print(request.files)
+        filetype = request.form.get('filetype')
+        result = realpdf.pdftime(filetype, request.files)
+        print('images.zip' if filetype == "onetoone" else 'images.pdf')
+    return send_file(BytesIO(result), download_name='images.zip' if filetype == "onetoone" else 'images.pdf', as_attachment=True)
     print("IYA!")
-    print(request.files)
+    
     return "sdsd"
     
 if __name__ == "__main__":
